@@ -41,3 +41,9 @@ func TestCekGanjilGenap(t *testing.T) {
 		})
 	}
 }
+
+func BenchmarkCekGanjilGenap(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		CekGanjilGenap()
+	}
+}
