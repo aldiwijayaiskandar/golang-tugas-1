@@ -44,6 +44,6 @@ func TestCekGanjilGenap(t *testing.T) {
 
 func BenchmarkCekGanjilGenap(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		CekGanjilGenap()
+		CekGanjilGenap(i, i+1, i+2, i+3)
 	}
 }
